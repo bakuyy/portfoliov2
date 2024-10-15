@@ -9,7 +9,7 @@ const Home = () => {
           <div>Hi,</div>
           <div>I'm Sophie</div>
           <div> </div>
-          <div>Yang</div>
+          <div>Yang.</div>
           <div className='icon-box'></div>
         </div>
         <div className='home-desc ledger'>

@@ -31,14 +31,14 @@
 }
 
 .project-title {
-    color: black;
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 0 10px;
 }
 
 .project-desc {
-    color: gray;
+    color: var(--text-color);
     font-size: 0.9rem;
 }
 

@@ -149,10 +149,18 @@ const Projects = () => {
           onInit={(typewriter) => {
             typewriter
               .typeString("ideas")
+              .typeString("   ")
+
               .pauseFor(1500)
+              .typeString("   ")
+
               .typeString("··········")
+              .typeString("   ")
+
               .pauseFor(1500)
               .typeString("reality.")
+              .typeString("   ")
+
               .pauseFor(1000)
               .start();
           }}
@@ -162,10 +170,10 @@ const Projects = () => {
           }}
         />
       </div>
-      <div className="proj-title">projects</div>
-      <div className="w-full flex flex-col items-center"> {/* Change to flex-col for vertical stacking */}
+      <div className="proj-title noto-home">projects</div>
+      <div className="w-full flex flex-col items-center"> 
         {projects.reverse().map((project) => (
-          <div key={project.Id} className="p-4 w-full"> {/* Full width for each project */}
+          <div key={project.Id} className="p-4 w-full"> 
             <Project
               title={project.Name}
               image={project.Image || "path/to/placeholder.png"}

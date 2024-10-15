@@ -28,7 +28,15 @@ body {
 .main-content {
     flex: 1;
 }
+.icons{
+    display: flex;
+    color: var(--text-color);
+}
+.icon {
+    padding:0.5em 0.5em;
+    color: var(--text-color);
 
+}
 @media (max-width: 768px) {
     .noto-footer {
         font-size: medium;
