@@ -12,7 +12,6 @@
     font-size: 5em;
     color: black;
     width: 100%;
- 
 }
 
 .icon-box {
@@ -31,17 +30,19 @@
     margin-top: 10px;
     width: 90%; 
     max-width: 1300px; 
-    height: 80px; 
     border: 3px solid black;
     display: flex; 
-    align-items: center; 
-    justify-content: center;
-    box-sizing: border-box; 
+    align-items: flex-start; 
     justify-content: flex-start; 
     box-sizing: border-box; 
-    padding-left: 10px; 
+    padding: 10px; 
     text-align: left; 
+    color: black;
+    flex-direction: column; 
+    overflow: auto; 
 }
+
+
 
 .noto-home {
     font-family: 'Noto Serif', serif;
@@ -83,6 +84,6 @@
     }
 
     .text-box {
-        width: 95%; /* Further adjust width for very small screens */
+        width: 95%; 
     }
 }

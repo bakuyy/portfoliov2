@@ -3,6 +3,8 @@ import '../styling/Home.css';
 import Highlighter from "react-highlight-words";
 
 const Home = () => {
+
+
   return (
     <div className='home-container'>
         <div className="home-header noto-home items-left">
@@ -21,15 +23,28 @@ const Home = () => {
             />
         </div>
 
-        
-          <div className='noto-home home-item'>Currently,</div>
-          <div className='text-box'>Test</div>
+          <div className='noto-home home-item'>currently,</div>
+          <div className='text-box ledger'>
+            <ol>
+              <li>- blah</li>
+              <li>- blha</li>
+              <li>- blha</li>
+              <li>- blha</li>
 
-          <div className='noto-home home-item'>Currently,</div>
-          <div className='text-box'>Test</div>
+            </ol>
 
-          <div className='noto-home home-item'>Currently,</div>
-          <div className='text-box'>Test</div>
+
+          </div>
+
+          <div className='noto-home home-item'>over the past bit,</div>
+          <div className='text-box ledger'>
+
+          </div>
+
+          <div className='noto-home home-item'>looking ahead</div>
+          <div className='text-box ledger'>
+
+          </div>
         </div>
       
   );
