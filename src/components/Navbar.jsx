@@ -24,14 +24,14 @@ const Navbar = () => {
     };
 
     const links = [
-        { name: "home", link: '/', id: 'home' },
-        { name: "resume", link: '/resume', id: 'resume' },
-        { name: "projects", link: '/projects', id: 'projects' },
-        { name: "blogs", link: '/blogs', id: 'blogs' },
+        { name: "Home", link: '/', id: 'home' },
+        { name: "Resume", link: '/resume', id: 'resume' },
+        { name: "Projects", link: '/projects', id: 'projects' },
+        { name: "Blogs", link: '/blogs', id: 'blogs' },
     ];
 
     const iconStyle = {
-        color: theme === 'light' ? 'black' : '#f2e3c2', 
+        color: theme === 'light' ? 'black' : '#D9D9D9', 
         fontSize: '1em', 
     };
 

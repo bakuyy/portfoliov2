@@ -57,19 +57,19 @@
 
 .MuiToggleButton-root {
     border-radius: 8px;
-    border: 2px solid var(--text-color); /* Ensures border is visible in both themes */
+    border: 2px solid var(--text-color);
     background-color: transparent;
     transition: background-color 0.3s, color 0.3s;
     padding: 10px 15px;
 }
 
 .MuiToggleButton-root:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Light hover effect */
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .Mui-selected {
     background-color: var(--link-color);
-    color: white; /* Text color when selected */
+    color: white;
     border: 2px solid var(--link-color);
 }
 
@@ -80,17 +80,17 @@
 }
 
 .light-theme .MuiToggleButton-root .MuiToggleButton-label svg {
-    color: black; /* Icon color in light theme */
+    color: black;
 }
 
 .dark-theme .MuiToggleButton-root .MuiToggleButton-label svg {
-    color: #f2e3c2; /* Icon color in dark theme */
+    color: #D9D9D9;
 }
 
 .dark-theme .MuiToggleButton-root {
-    border-color: #f2e3c2; /* Light border color in dark theme */
+    border-color: #D9D9D9;
 }
 
 .dark-theme .Mui-selected {
-    border: 2px solid #f2e3c2; /* Light selected border in dark theme */
+    border: 2px solid #D9D9D9;
 }
