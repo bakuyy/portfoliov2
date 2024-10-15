@@ -2,27 +2,95 @@
 
 .navbar-container {
     display: flex;
-    position: absolute;
-    left: 50%; 
-    top: 5%; 
-    transform: translateX(-50%); 
-    overflow: hidden; 
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 100%;
+    position: relative;
+    top: 5%;
 }
 
 .nav-link {
     margin: 0 1rem;
-    color: black;
-    margin-bottom: 10%;
-
+    color: var(--text-color);
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+    font-size: large;
+    text-decoration: none;
 }
 
 .noto-serif {
     font-family: 'Noto Serif', serif;
-    font-weight: 300; 
-    /* font-style: italic;  */
+    font-weight: 300;
     font-size: large;
 }
 
-
 @media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin: 1rem 0;
+    }
+}
+
+.light-theme {
+    --background-color: white;
+    --text-color: black;
+    --link-color: #646cff;
+    --link-hover-color: #747bff;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dark-theme {
+    --background-color: #1a1a1a;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --link-color: #a8b8ff;
+    --link-hover-color: #646cff;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.MuiToggleButton-root {
+    border-radius: 8px;
+    border: 2px solid var(--text-color); /* Ensures border is visible in both themes */
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 15px;
+}
+
+.MuiToggleButton-root:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light hover effect */
+}
+
+.Mui-selected {
+    background-color: var(--link-color);
+    color: white; /* Text color when selected */
+    border: 2px solid var(--link-color);
+}
+
+.MuiToggleButton-label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.light-theme .MuiToggleButton-root .MuiToggleButton-label svg {
+    color: black; /* Icon color in light theme */
+}
+
+.dark-theme .MuiToggleButton-root .MuiToggleButton-label svg {
+    color: #f2e3c2; /* Icon color in dark theme */
+}
+
+.dark-theme .MuiToggleButton-root {
+    border-color: #f2e3c2; /* Light border color in dark theme */
+}
+
+.dark-theme .Mui-selected {
+    border: 2px solid #f2e3c2; /* Light selected border in dark theme */
 }

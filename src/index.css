@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 :root {
   font-family: 'sans-serif';
@@ -16,6 +18,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.light-theme {
+  --background-color: #f2e3c2;
+  --text-color: black;
+  --link-color: #646cff;
+  --link-hover-color: #747bff;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.dark-theme {
+  --background-color: #1a1a1a;
+  --text-color: #f2e3c2;
+  --link-color: #f2e3c2;
+  --link-hover-color: #646cff;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 a {
@@ -71,4 +91,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-

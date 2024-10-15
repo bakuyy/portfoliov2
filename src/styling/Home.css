@@ -6,11 +6,12 @@
     padding: 20px;
     align-items: flex-start; 
     text-align: left;
+    color: var(--text-color);
 }
 
 .home-header {
     font-size: 5em;
-    color: black;
+    color: var(--text-color);
     width: 100%;
 }
 
@@ -19,7 +20,7 @@
     width: 90%; 
     max-width: 400px; 
     height: 80px; 
-    border: 3px solid black;
+    border: 3px solid var(--text-color);
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -30,41 +31,40 @@
     margin-top: 10px;
     width: 90%; 
     max-width: 1300px; 
-    border: 3px solid black;
+    border: 3px solid var(--text-color);
     display: flex; 
     align-items: flex-start; 
     justify-content: flex-start; 
     box-sizing: border-box; 
     padding: 10px; 
     text-align: left; 
-    color: black;
+    color: var(--text-color);
     flex-direction: column; 
     overflow: auto; 
 }
-
-
 
 .noto-home {
     font-family: 'Noto Serif', serif;
     font-weight: 300; 
     font-style: italic; 
     text-align: left;
+    color: var(--text-color);
 }
 
 .home-desc {
-    color: black;
+    color: var(--text-color); 
     font-size: x-large;     
     margin-top: 20px; 
     overflow-wrap: normal;        
 }
 
 .highlight {
-    background-color: #DEB181; 
+    background-color: #DEB181;
 }
 
 .home-item {
     font-size: x-large;
-    color: black;
+    color: var(--text-color);
     margin-top: 2rem;
 }
 

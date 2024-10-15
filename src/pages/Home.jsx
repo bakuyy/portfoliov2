@@ -3,8 +3,6 @@ import '../styling/Home.css';
 import Highlighter from "react-highlight-words";
 
 const Home = () => {
-
-
   return (
     <div className='home-container'>
         <div className="home-header noto-home items-left">
@@ -17,36 +15,32 @@ const Home = () => {
         <div className='home-desc ledger'>
             <Highlighter
                 highlightClassName="highlight"
-                searchWords={["systems design engineering", "University of Waterloo"]}
+                searchWords={[" systems design engineering ", " University of Waterloo."]}
                 autoEscape={true}
-                textToHighlight="I’m a systems design engineering student at the University of Waterloo."
+                textToHighlight="I’m a systems design engineering student at the  University of Waterloo. "
             />
         </div>
 
-          <div className='noto-home home-item'>currently,</div>
-          <div className='text-box ledger'>
+        <div className='noto-home home-item'>currently,</div>
+        <div className='text-box ledger'>
             <ol>
               <li>- blah</li>
               <li>- blha</li>
               <li>- blha</li>
               <li>- blha</li>
-
             </ol>
-
-
-          </div>
-
-          <div className='noto-home home-item'>over the past bit,</div>
-          <div className='text-box ledger'>
-
-          </div>
-
-          <div className='noto-home home-item'>looking ahead</div>
-          <div className='text-box ledger'>
-
-          </div>
         </div>
-      
+
+        <div className='noto-home home-item'>over the past bit,</div>
+        <div className='text-box ledger'>
+          {/* Content can be added here */}
+        </div>
+
+        <div className='noto-home home-item'>looking ahead</div>
+        <div className='text-box ledger'>
+          {/* Content can be added here */}
+        </div>
+    </div>
   );
 }
 
