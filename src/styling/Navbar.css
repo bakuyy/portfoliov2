@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,300&display=swap');
 
-
-.navbar-container{
-
-    margin-right: 50px;
-    margin-top: 50px;
-
+.navbar-container {
+    display: flex;
+    position: absolute;
+    left: 50%; 
+    top: 5%; 
+    transform: translateX(-50%); 
+    overflow: hidden; 
 }
 
-.nav-link{
+.nav-link {
     margin: 0 1rem;
     color: black;
 }
@@ -17,8 +18,8 @@
     font-family: 'Noto Serif', serif;
     font-weight: 300; 
     font-style: italic; 
-  }
+}
 
-  @media (max-width:768px){
-    
-  }
+
+@media (max-width: 768px) {
+}
