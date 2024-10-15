@@ -1,0 +1,46 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.typewriter {
+    margin: 1em;
+    padding: 20px;
+    color: var(--text-color);
+    font-size: 4rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.proj-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .typewriter {
+        font-size: 3rem;
+        padding: 15px;
+    }
+
+    .proj-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .typewriter {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .proj-title {
+        font-size: 1.2rem;
+    }
+}

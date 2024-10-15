@@ -1,0 +1,68 @@
+.project-card {
+    display: flex;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 80vw; /* Set a max-width for the cards */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Ensures child elements don't overflow */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the image vertically */
+    background-color: #f8f8f8; /* Background color for the image box */
+    border-right: 2px solid #ddd; /* Add a visual separation */
+}
+
+.image-logo {
+    height: 20vh; /* Maintain aspect ratio */
+}
+
+.project-details {
+    flex: 1; /* Take remaining space */
+    padding: 10px;
+    display: flex;
+    flex-direction: column; 
+    margin-left: 1rem;
+    border: 3px solid var(--text-color);
+
+}
+
+.project-title {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.project-desc {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto; /* Push tech tags to the bottom */
+}
+
+.techTag {
+    margin: 0 5px 5px 0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+    }
+}

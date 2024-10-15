@@ -1,56 +1,54 @@
-/* Resume.css */
 .resume-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack items vertically for better mobile view */
+    flex-direction: column;
     padding: 20px;
-    height: 100vh; /* Full height to ensure proper alignment */
-    overflow: hidden; /* Prevent overflow of content */
+    height: 100vh;
+    overflow: hidden;
 }
 
 .resume-pdf {
-    width: 80vw; /* Responsive width */
-    max-width: 800px; /* Max width to prevent it from being too wide on large screens */
-    height: 80vh; /* Set height for a good viewing area */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 80vw;
+    max-width: 800px;
+    height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .download-button {
-    margin-top: 20px; /* Spacing above the button */
-    padding: 10px 20px; /* Padding for the button */
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .download-button:hover {
-    background-color: #0056b3; /* Darken button on hover */
+    background-color: #0056b3;
 }
 
-/* Media Queries for Further Responsiveness */
 @media (max-width: 768px) {
     .resume-pdf {
-        height: 60vh; /* Adjust height for smaller screens */
+        height: 60vh;
     }
 
     .download-button {
-        max-width: 90%; /* Allow button to take more space on small screens */
+        max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .resume-pdf {
-        height: 50vh; /* Further adjust height for very small screens */
+        height: 50vh;
     }
 
     .download-button {
-        font-size: 14px; /* Smaller font size for mobile */
-        padding: 8px 16px; /* Smaller padding */
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
