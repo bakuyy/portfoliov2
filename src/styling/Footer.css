@@ -1,20 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap');
-
-.container {
+.footer-container {
+    width: 100%;
     color: black;
-    position: absolute; 
-    bottom: 5%;        
-    left: 50%;           
-    transform: translateX(-50%); 
-    overflow: hidden;    
-    max-width: 90%;     
-    text-align: center; 
-    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
 }
 
-.noto {
+.noto-footer {
     font-family: 'Noto Serif', serif;
     font-weight: 300; 
     font-size: large;
     font-style: normal;
+    text-align: center; 
+}
+
+/* Ensure body has a minimum height to push footer down */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum height of 100% viewport height */
+    margin: 0; /* Reset default margin */
+}
+
+.main-content {
+    flex: 1; /* This allows the main content to take up remaining space */
 }

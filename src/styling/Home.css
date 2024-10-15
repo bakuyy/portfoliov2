@@ -2,28 +2,45 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin: 0 auto;
+    margin: 10rem auto;
     padding: 20px;
-    margin-left: 20vw;
-
+    align-items: flex-start; 
+    text-align: left;
 }
 
 .home-header {
     font-size: 5em;
     color: black;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    text-align: left;
+ 
 }
 
-.test {
+.icon-box {
     margin-top: 10px;
-    padding: 20px 250px;
-    border: 5px solid black;
-    
+    width: 90%; 
+    max-width: 400px; 
+    height: 80px; 
+    border: 3px solid black;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    box-sizing: border-box; 
+}
 
+.text-box {
+    margin-top: 10px;
+    width: 90%; 
+    max-width: 1300px; 
+    height: 80px; 
+    border: 3px solid black;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    box-sizing: border-box; 
+    justify-content: flex-start; 
+    box-sizing: border-box; 
+    padding-left: 10px; 
+    text-align: left; 
 }
 
 .noto-home {
@@ -33,17 +50,21 @@
     text-align: left;
 }
 
-
-.home-desc{
+.home-desc {
     color: black;
     font-size: x-large;     
     margin-top: 20px; 
-    overflow-wrap:normal;        
-
-    
+    overflow-wrap: normal;        
 }
+
 .highlight {
     background-color: #DEB181; 
+}
+
+.home-item {
+    font-size: x-large;
+    color: black;
+    margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -51,9 +72,8 @@
         font-size: 3em;
     }
 
-    .test {
-        padding: 20px;
-        width: 95%;
+    .text-box {
+        width: 90%; 
     }
 }
 
@@ -62,7 +82,7 @@
         font-size: 2.5em;
     }
 
-    .test {
-        padding: 15px;
+    .text-box {
+        width: 95%; /* Further adjust width for very small screens */
     }
 }
