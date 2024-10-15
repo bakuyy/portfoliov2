@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,300&display=swap');
+
+
+.navbar-container{
+
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+
+.nav-link{
+    margin: 0 1rem;
+    color: black;
+}
+
+.noto-serif {
+    font-family: 'Noto Serif', serif;
+    font-weight: 300; 
+    font-style: italic; 
+  }
+
+  @media (max-width:768px){
+    
+  }
