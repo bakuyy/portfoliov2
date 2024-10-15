@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-#root {
-  margin: 0 auto;
-  padding: 2rem;
-  overflow: hidden;
-} 
  
 
 .noto-serif-custom {
   font-family: 'Noto Serif', serif;
   font-weight: 500; 
   font-style: italic; 
+}
+
+.ledger{
+  font-family: 'Ledger', serif;
+  color: black;
 }

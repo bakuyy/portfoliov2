@@ -1,13 +1,26 @@
 import React from 'react'
+import '../styling/Home.css'
+import Highlighter from "react-highlight-words";
 
 const Home = () => {
   return (
-    <div>
-    <div className=' w-56 '>
-        <div className="text-black text-left text-7xl noto-serif-custom  ">Hi, I'm Sophie Yang</div>
+    <div className='home-container'>
+        <div className="home-header noto-home items-left">
+          <div>Hi,</div>
+          <div>I'm Sophie</div>
+          <div> </div>
+          <div>Yang</div>
+          <div className='test'></div>
+
+        </div>
+        <div className='home-desc ledger'>
+        <Highlighter
+        highlightClassName="highlight"
+        searchWords={["systems design engineering", "University of Waterloo"]}
+        autoEscape={true}
+        textToHighlight="I’m a systems design engineering  student at the University of Waterloo."/>
+        </div>
       </div>
-      
-    </div>
   )
 }
 
