@@ -1,4 +1,3 @@
-// Resume.jsx
 import React from 'react';
 import '../styling/Resume.css';
 import { IoCloudDownloadOutline } from "react-icons/io5";

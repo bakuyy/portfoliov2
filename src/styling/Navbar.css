@@ -20,7 +20,16 @@
     font-weight: 300;
     font-size: large;
     text-decoration: none;
+    background: linear-gradient(#deb181, #deb181) bottom / 0 .1em no-repeat;
+    transition: background-size 0.5s ease-in-out;
 }
+
+.nav-link:hover {
+    background-size: 100% .1em;
+    color: var(--text-color);
+}
+
+
 
 .noto-serif {
     font-family: 'Noto Serif', serif;
@@ -43,8 +52,8 @@
 .light-theme {
     --background-color: white;
     --text-color: black;
-    --link-color: #646cff;
-    --link-hover-color: #747bff;
+    --link-color: #deb181;
+    --link-hover-color: #deb181;
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -52,8 +61,8 @@
 .dark-theme {
     --background-color: #1a1a1a;
     --text-color: rgba(255, 255, 255, 0.87);
-    --link-color: #a8b8ff;
-    --link-hover-color: #646cff;
+    --link-color: #deb181;
+    --link-hover-color: #deb181;
     background-color: var(--background-color);
     color: var(--text-color);
 }

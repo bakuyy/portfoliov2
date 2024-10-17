@@ -34,7 +34,9 @@
 
 @media (max-width: 768px) {
     .resume-pdf {
+        width: 80vw;
         height: 60vh;
+        margin-top: -5vh;
     }
 
     .download-button {
