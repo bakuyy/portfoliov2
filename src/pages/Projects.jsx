@@ -15,7 +15,8 @@ import Proj8 from "../styling/projIcons/proj8.png";
 import Proj9 from "../styling/projIcons/proj9.png";
 import Proj10 from "../styling/projIcons/proj10.png";
 import Proj11 from "../styling/projIcons/proj11.png";
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import { motion } from "framer-motion"
+import Rainbow from "../assets/Rainbow.png"
 
 const Projects = () => {
   const projects = [
@@ -259,7 +260,11 @@ const Projects = () => {
           }}
         />
       </div>
-      <div className="proj-title noto-home">projects</div>
+      <div>
+  <img className="rainbow" src={Rainbow} alt="Rainbow" />
+  <div className="proj-title noto-home">projects</div>
+</div>
+
       <div className="w-full flex flex-col items-center">
         {projects.reverse().map((project, index) => (
           <motion.div
