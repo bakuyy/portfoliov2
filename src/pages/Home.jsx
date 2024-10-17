@@ -41,9 +41,16 @@ const Home = () => {
       <div className="text-box ledger">
         <ul className="list">
           <li>seeking Winter 2025 software dev. opportunities!</li>
-          <li>building <a href="">Chime</a></li>
-          <li>learning how to leetcode. check out my profile: <a href="">link</a></li>
-          <li>taking CS50's Introduction to Artificial Intelligence with Python by Brian Yu</li>
+          <li>
+            building <a href="">Chime</a>
+          </li>
+          <li>
+            learning how to leetcode. check out my <a href="">profile</a>
+          </li>
+          <li>
+            taking CS50's Introduction to Artificial Intelligence with Python by
+            Brian Yu
+          </li>
           <li>trying my hand at hardware ⚙️🛠️</li>
         </ul>
       </div>
@@ -53,23 +60,32 @@ const Home = () => {
         <div className="noto-home home-item">over the past bit, I have</div>
       </div>
       <div className="text-box ledger">
-      <ul className="list">
-      <li>developed an API assessor for 3500+ internal APIs using React and Golang, automated archiving of 14MM client consent forms saving $300,000, and implemented DevOps best practices in an Agile environment</li>
-          <li>led a high-school expansion project, executing 4 successful campaigns, conducting focus groups to gather insights, and utilizing digital marketing strategies to achieve 2000+ in-person reach and 15000+ digital impressions</li>
-          <li></li>
+        <ul className="list">
+          <li>
+            developed an API assessor for 3500+ internal APIs using React and
+            Golang, automated archiving of 14MM client consent forms saving
+            $300,000, and implemented DevOps best practices in an Agile
+            environment
+          </li>
+          <li>been to 16 hackathons and won 10 of them! check out my <a href=""> devpost</a></li>
+          <li>
+            led a high-school expansion project, executing 4 successful
+            campaigns, conducting focus groups to gather insights, and utilizing
+            digital marketing strategies to achieve 2000+ in-person reach and
+            15000+ digital impressions
+          </li>
         </ul>
       </div>
 
-      <div className="noto-home home-item">looking ahead, I'll</div>
+      <div className="noto-home home-item">looking ahead, I'd like to</div>
       <div className="text-box ledger">
-      <ul className="list">
-      <li>hi</li>
-          <li>hi</li>
+        <ul className="list">
+          <li>work at a startup. i want to wear different hats and make meaningful impact for a product that i believe in!</li>
+          <li>mentor or judge at a hackathon</li>
+          <li>keep advocating for gender equality in software :)</li>
         </ul>
       </div>
-      <div>
-
-      </div>
+      <div></div>
     </div>
   );
 };

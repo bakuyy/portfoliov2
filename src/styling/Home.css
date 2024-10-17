@@ -130,6 +130,7 @@
 .list li {
     position: relative;
     padding-left: 20px;
+    margin-top: 8px;
 }
 
 .list li:before {
