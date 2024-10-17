@@ -6,11 +6,17 @@ import Waveman from "../assets/Waveman.gif";
 import Goose from "../assets/Goose.gif";
 import Underline from "../assets/Underline.png";
 import Clock from "../assets/Clock.gif";
+import { motion } from "framer-motion"; // Import motion from framer-motion
 
 const Home = () => {
   return (
     <div className="home-container">
-      <div className="home-header noto-home items-left">
+      <motion.div
+        className="home-header noto-home items-left"
+        initial={{ opacity: 0, y: -20 }} // Initial state
+        animate={{ opacity: 1, y: 0 }} // Final state
+        transition={{ duration: 0.5 }} // Transition duration
+      >
         <div className="waveman-container">
           <div>Hi,</div>
           <img className="waveman" src={Waveman} alt="Waveman" />
@@ -21,8 +27,14 @@ const Home = () => {
         <div className="icon-box">
           <img className="fisherman" src={Fisherman} alt="Fisherman" />
         </div>
-      </div>
-      <div className="home-desc ledger">
+      </motion.div>
+      
+      <motion.div
+        className="home-desc ledger"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }} 
+      >
         <img className="goose" src={Goose} alt="Goose" />
         <Highlighter
           highlightClassName="highlight"
@@ -34,18 +46,30 @@ const Home = () => {
           textToHighlight="I’m a systems design engineering student at the University of Waterloo. I'm a developer and a creative at heart."
         />
         <img className="underline" src={Underline} alt="Underline" />
-      </div>
+      </motion.div>
 
-      <div className="noto-home home-item">currently, I am</div>
+      <motion.div
+        className="noto-home home-item"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
+        currently, I am
+      </motion.div>
 
-      <div className="text-box ledger">
+      <motion.div
+        className="text-box ledger"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+      >
         <ul className="list">
           <li>seeking Winter 2025 software dev. opportunities!</li>
           <li>
-            building <a href="">Chime</a>
+            building <a target="_blank" href="https://github.com/bakuyy/chime">Chime</a>
           </li>
           <li>
-            learning how to leetcode. check out my <a href="">profile</a>
+            learning how to leetcode. check out my <a target="_blank" href="https://leetcode.com/u/bakuyy/">profile</a>
           </li>
           <li>
             taking CS50's Introduction to Artificial Intelligence with Python by
@@ -53,13 +77,24 @@ const Home = () => {
           </li>
           <li>trying my hand at hardware ⚙️🛠️</li>
         </ul>
-      </div>
+      </motion.div>
 
-      <div className="currently-container">
+      <motion.div
+        className="currently-container"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+      >
         <img className="clock" src={Clock} alt="Clock" />
         <div className="noto-home home-item">over the past bit, I have</div>
-      </div>
-      <div className="text-box ledger">
+      </motion.div>
+
+      <motion.div
+        className="text-box ledger"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 1.0 }}
+      >
         <ul className="list">
           <li>
             developed an API assessor for 3500+ internal APIs using React and
@@ -67,7 +102,7 @@ const Home = () => {
             $300,000, and implemented DevOps best practices in an Agile
             environment
           </li>
-          <li>been to 16 hackathons and won 10 of them! check out my <a href=""> devpost</a></li>
+          <li>been to 16 hackathons and won 10 of them! check out my <a target="_blank" href="https://devpost.com/sophieyang12345"> devpost</a></li>
           <li>
             led a high-school expansion project, executing 4 successful
             campaigns, conducting focus groups to gather insights, and utilizing
@@ -75,16 +110,29 @@ const Home = () => {
             15000+ digital impressions
           </li>
         </ul>
-      </div>
+      </motion.div>
 
-      <div className="noto-home home-item">looking ahead, I'd like to</div>
-      <div className="text-box ledger">
+      <motion.div
+        className="noto-home home-item"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 1.2 }}
+      >
+        looking ahead, I'd like to
+      </motion.div>
+
+      <motion.div
+        className="text-box ledger"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 1.4 }}
+      >
         <ul className="list">
           <li>work at a startup. i want to wear different hats and make meaningful impact for a product that i believe in!</li>
           <li>mentor or judge at a hackathon</li>
           <li>keep advocating for gender equality in software :)</li>
         </ul>
-      </div>
+      </motion.div>
       <div></div>
     </div>
   );
