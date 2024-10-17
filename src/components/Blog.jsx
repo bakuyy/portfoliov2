@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import '../styling/Blog.css';
 
 const Blog = ({ Title, Desc, Date }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const maxLength = 100;
+  const [isExpanded, setIsExpanded] = useState(false)
+  const maxLength = 100
 
   const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
+    setIsExpanded(!isExpanded)
+  }
 
-  const descLength = Desc ? Desc.length : 0;
+  const descLength = Desc ? Desc.length : 0
 
   return (
     <div className="blog-card noto-normal">
@@ -29,7 +29,7 @@ const Blog = ({ Title, Desc, Date }) => {
       )}
       <p className="blog-date">{Date}</p>
     </div>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
