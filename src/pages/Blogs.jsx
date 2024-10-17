@@ -23,9 +23,10 @@ const Blogs = () => {
   return (
     <div className='ledger'> 
       <div className='bl-title text-center my-16 noto-home text-2xl'>blogs</div>
-      {blogPosts.map((post, index) => (
+      {/* {blogPosts.map((post, index) => (
         <Blog key={index} Title={post.Title} Desc={post.Desc} Date={post.Date} />
-      ))}
+      ))} */}
+      <div>In progress right now, check soon!</div>
     </div>
   )
 }
