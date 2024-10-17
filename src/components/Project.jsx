@@ -1,7 +1,8 @@
+// Project.js
 import React from 'react';
 import "../styling/Project.css";
 
-const Project = ({ title, desc, image, techstack = [] }) => {
+const Project = ({ title, desc, image, techstack = [], links = [] }) => {
     const stackColors = {
         Javascript: "#ADDA44",
         React: "#61DAFB",
@@ -29,16 +30,25 @@ const Project = ({ title, desc, image, techstack = [] }) => {
         AlanAI: "#E2743F",
         JSON: "#939393",
         Arduino: "#009297",
-        'C++': "#4A7CAC"
+        'C++': "#4A7CAC",
     };
 
     return (
-        <div className="project-card ledger">
+        <div className="project-card noto-normal">
             <div className='image-container'>
                 <img className='image-logo' src={image || 'path/to/placeholder.png'} alt={title || 'Project Image'} />
             </div>
             <div className='project-details'>
-                <h2 className='project-title'>{title || 'Untitled Project'}</h2>
+                <div className='project-header'>
+                    <h2 className='project-title'>{title || 'Untitled Project'}</h2>
+                    <div className='project-links'>
+                        {links.map((link, index) => (
+                            <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="link-icon">
+                                {link.icon}
+                            </a>
+                        ))}
+                    </div>
+                </div>
                 <p className='project-desc'>{desc || 'No description available.'}</p>
                 <div className='techStack'>
                     {techstack.map((tag, index) => {

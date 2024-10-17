@@ -10,7 +10,9 @@
   .blog-card:hover {
     transform: translateY(-5px);
   }
-  
+  .bl-title{
+    font-weight: bolder;
+  }
   .blog-title {
     font-size: 1.8rem;
     margin-bottom: 10px;

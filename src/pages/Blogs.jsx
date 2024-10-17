@@ -22,7 +22,7 @@ const Blogs = () => {
 
   return (
     <div className='ledger'> 
-      <div className='text-center my-16 noto-home text-2xl'>blogs</div>
+      <div className='bl-title text-center my-16 noto-home text-2xl'>blogs</div>
       {blogPosts.map((post, index) => (
         <Blog key={index} Title={post.Title} Desc={post.Desc} Date={post.Date} />
       ))}

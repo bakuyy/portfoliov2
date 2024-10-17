@@ -28,7 +28,7 @@ const Home = () => {
                 highlightClassName="highlight"
                 searchWords={[" systems design engineering ", " University of Waterloo."]}
                 autoEscape={true}
-                textToHighlight="I’m a systems design engineering student at the University of Waterloo. I'm a developer and a doodler at heart."
+                textToHighlight="I’m a systems design engineering student at the University of Waterloo. I'm a developer and a creative at heart."
             />
             <img className="underline" src={Underline} alt="Underline" />
         </div>

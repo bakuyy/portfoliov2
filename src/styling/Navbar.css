@@ -20,13 +20,17 @@
     font-weight: 300;
     font-size: large;
     text-decoration: none;
-    background: linear-gradient(#deb181, #deb181) bottom / 0 .1em no-repeat;
-    transition: background-size 0.5s ease-in-out;
+    padding: 0.3rem 0.4rem;
+    border: 2px solid transparent; 
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out; 
+
 }
 
 .nav-link:hover {
     background-size: 100% .1em;
     color: var(--text-color);
+    border: 1px solid var(--text-color);
+
 }
 
 
@@ -68,7 +72,6 @@
 }
 
 .MuiToggleButton-root {
-    border-radius: 8px;
     border: 2px solid var(--text-color);
     background-color: transparent;
     transition: background-color 0.3s, color 0.3s;
@@ -76,7 +79,7 @@
 }
 
 .MuiToggleButton-root:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: black(255, 255, 255, 0.3);
 }
 
 .Mui-selected {

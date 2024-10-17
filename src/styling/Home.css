@@ -111,6 +111,14 @@
     text-align: left;
     color: var(--text-color);
 }
+.noto-normal{
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+    text-align: left;
+    color: var(--text-color);
+}
+
+
 
 .highlight {
     background-color: #DEB181;
