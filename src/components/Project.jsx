@@ -34,7 +34,7 @@ const Project = ({ title, desc, image, techstack = [], links = [] }) => {
     };
 
     return (
-        <div className="project-card noto-normal">
+        <div className="project-card maven">
             <div className='image-container'>
                 <img className='image-logo' src={image || 'path/to/placeholder.png'} alt={title || 'Project Image'} />
             </div>

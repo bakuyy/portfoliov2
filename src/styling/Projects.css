@@ -14,8 +14,10 @@
     padding: 20px;
     color: var(--text-color);
     font-size: 4rem;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     text-align: center;
+    border: 2px solid var(--text-color);
+
 }
 
 .proj-title {
@@ -30,13 +32,34 @@
 .rainbow {
     position: absolute;
     top: 240px;
-    left: 50%;
+    left: 49.5%;
     transform: translateX(-50%) rotate(2deg);
     z-index: 1;
     max-width: 20%;
     height: auto;
 
 }
+
+.typewriter-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ideaman {
+    position:absolute;
+    max-width: 50px;
+    height: auto;
+    left: 2%;
+}
+.plane{
+    position:absolute;
+    max-width: 150px;
+    height: auto;
+    left: 90%;
+    top:30%;
+}
+
 
 @media (max-width: 768px) {
     .typewriter {
@@ -53,9 +76,30 @@
         max-width: 50%;
     
     }
+    .ideaman {
+        left:-5%;
+    }
+    .plane{
+        max-width: 70px;
+    }
 }
 
 @media (max-width: 480px) {
+    .typewriter {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .proj-title {
+        font-size: 1.2rem;
+    }
+    .ideaman {
+        left:-2%;
+        max-width: 40px;
+    }
+}
+
+@media (max-width: 380px) {
     .typewriter {
         font-size: 2rem;
         padding: 10px;

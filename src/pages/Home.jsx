@@ -58,7 +58,7 @@ const Home = () => {
       </motion.div>
 
       <motion.div
-        className="text-box ledger"
+        className="text-box maven"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -90,7 +90,7 @@ const Home = () => {
       </motion.div>
 
       <motion.div
-        className="text-box ledger"
+        className="text-box maven"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.0 }}
@@ -122,7 +122,7 @@ const Home = () => {
       </motion.div>
 
       <motion.div
-        className="text-box ledger"
+        className="text-box maven"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.4 }}

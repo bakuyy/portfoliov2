@@ -17,6 +17,8 @@ import Proj10 from "../styling/projIcons/proj10.png";
 import Proj11 from "../styling/projIcons/proj11.png";
 import { motion } from "framer-motion"
 import Rainbow from "../assets/Rainbow.png"
+import Ideaman from "../assets/Ideaman.gif"
+import Plane from "../assets/Plane.gif"
 
 const Projects = () => {
   const projects = [
@@ -238,6 +240,8 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
+      <div className="typewriter-container">
+      <img src={Ideaman} alt="Ideaman" className="ideaman"/>
       <div className="typewriter">
         <Typewriter
           onInit={(typewriter) => {
@@ -260,8 +264,13 @@ const Projects = () => {
           }}
         />
       </div>
+      <img className="plane" src={Plane} alt="Plane"/>
+
+      </div>
+
       <div>
   <img className="rainbow" src={Rainbow} alt="Rainbow" />
+
   <div className="proj-title noto-home">projects</div>
 </div>
 

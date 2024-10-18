@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=M+PLUS+Rounded+1c&family=Maven+Pro:wght@400..900&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -62,8 +65,18 @@ h1 {
 }
 
 
+.comfortaa {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
-
+.maven {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
