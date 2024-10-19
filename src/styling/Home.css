@@ -32,6 +32,11 @@
     position: relative;
 }
 
+.eggman{
+    max-width: 2vw;
+    transform:rotate(-30deg);
+}
+
 .fisherman {
     position: absolute;
     bottom: -30px;
@@ -179,6 +184,10 @@
 
     .clock {
         max-width: 40px;
+    }
+
+    .eggman{
+        max-width: 10vw;
     }
 }
 

@@ -1,21 +1,33 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styling/Home.css";
 import Highlighter from "react-highlight-words";
+
+
 import Fisherman from "../assets/Fisherman.gif";
 import Waveman from "../assets/Waveman.gif";
+import Whitewaveman from "../assets/Whitewaveman.gif"
 import Goose from "../assets/Goose.gif";
 import Underline from "../assets/Underline.png";
 import Clock from "../assets/Clock.gif";
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import Eggman from "../assets/Eggman.gif";
+
+import { motion } from "framer-motion"; 
 
 const Home = () => {
+  const navigate = useNavigate()
+  const handleCoveClick=()=>{
+    navigate('/cove')
+  }
+
+
   return (
     <div className="home-container">
       <motion.div
         className="home-header noto-home items-left"
-        initial={{ opacity: 0, y: -20 }} // Initial state
-        animate={{ opacity: 1, y: 0 }} // Final state
-        transition={{ duration: 0.5 }} // Transition duration
+        initial={{ opacity: 0, y: -20 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.5 }} 
       >
         <div className="waveman-container">
           <div>Hi,</div>
@@ -25,6 +37,10 @@ const Home = () => {
         <div> </div>
         <div>Yang.</div>
         <div className="icon-box">
+          <button className="text-sm" onClick={handleCoveClick}>
+            {/* <img src={Eggman} alt="Eggman" className="eggman"/> */}
+            ?
+          </button>
           <img className="fisherman" src={Fisherman} alt="Fisherman" />
         </div>
       </motion.div>

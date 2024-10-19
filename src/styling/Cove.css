@@ -1,0 +1,25 @@
+.cove-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.talkingman {
+    max-width: 30vw;
+}
+
+.talking-text {
+    margin: 1em;
+    padding: 20px;
+    color: var(--text-color);
+    font-size: 4rem;
+    /* border-radius: 8px; */
+    text-align: center;
+    border: 2px solid var(--text-color);
+    font-size: 2rem;
+}
