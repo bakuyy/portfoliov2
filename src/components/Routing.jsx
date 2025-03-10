@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
 import Blogs from '../pages/Blogs'
 import Projects from '../pages/Projects'
-import Resume from '../pages/Resume'
+// import Resume from '../pages/Resume'
 import Cove from '../pages/Cove'
 
 const Routing = () => {

@@ -5,6 +5,7 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { CiLight } from "react-icons/ci";
 import { MdModeNight } from "react-icons/md";
+import Resume from "../assets/resume.pdf"
 
 const Navbar = () => {
     const [theme, setTheme] = useState('light');
@@ -25,7 +26,7 @@ const Navbar = () => {
 
     const links = [
         { name: "Home", link: '/', id: 'home' },
-        { name: "Resume", link: '/images/resume.pdf', id: 'resume' },
+        // { name: "Resume", link: '/images/resume.pdf', id: 'resume', target: '_blank' },
         { name: "Projects", link: '/projects', id: 'projects' },
         { name: "Blogs", link: '/blogs', id: 'blogs' },
     ]
@@ -47,7 +48,14 @@ const Navbar = () => {
                         {name}
                     </Link>
                 ))}
-            </div>
+                <a
+                    className='nav-link noto-serif'
+                    href={Resume}
+                    target="_blank" // Opens in a new tab
+                    rel="noopener noreferrer" // Security best practice
+                >
+                    Resume
+                </a>            </div>
             <ToggleButtonGroup
                 value={theme}
                 exclusive
