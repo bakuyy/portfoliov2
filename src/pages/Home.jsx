@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { useNavigate } from "react-router-dom";
 import "../styling/Home.css";
 import Highlighter from "react-highlight-words";
@@ -15,14 +15,25 @@ import Eggman from "../assets/Eggman.gif";
 import { motion } from "framer-motion"; 
 
 const Home = () => {
+
   const navigate = useNavigate()
   const handleCoveClick=()=>{
     navigate('/cove')
   }
 
+  const [theme, setTheme] = (useState('light'))
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+    document.body.className = savedTheme === 'light' ? 'light-theme' : 'dark-theme';
+}, [])
+
 
   return (
+  
     <div className="home-container">
+      {console.log(theme)}
       <motion.div
         className="home-header noto-home items-left"
         initial={{ opacity: 0, y: -20 }} 
@@ -42,6 +53,7 @@ const Home = () => {
             ?
           </button>
           <img className="fisherman" src={Fisherman} alt="Fisherman" />
+          <img className="fisherman" src={Fisherman} alt="fishman"/>
         </div>
       </motion.div>
       
@@ -59,7 +71,7 @@ const Home = () => {
             " University of Waterloo.",
           ]}
           autoEscape={true}
-          textToHighlight="I’m a systems design engineering student at the University of Waterloo. I'm a developer and a creative at heart."
+          textToHighlight="I’m a systems design engineering student at the University of Waterloo. I'm a developer and a creative at heart :)"
         />
         <img className="underline" src={Underline} alt="Underline" />
       </motion.div>

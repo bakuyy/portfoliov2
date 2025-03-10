@@ -21,14 +21,14 @@ const Navbar = () => {
             document.body.className = newTheme === 'light' ? 'light-theme' : 'dark-theme';
             localStorage.setItem('theme', newTheme);
         }
-    };
+    }
 
     const links = [
         { name: "Home", link: '/', id: 'home' },
-        { name: "Resume", link: '/resume', id: 'resume' },
+        { name: "Resume", link: '/images/resume.pdf', id: 'resume' },
         { name: "Projects", link: '/projects', id: 'projects' },
         { name: "Blogs", link: '/blogs', id: 'blogs' },
-    ];
+    ]
 
     const iconStyle = {
         color: theme === 'light' ? 'black' : '#D9D9D9', 
@@ -62,7 +62,7 @@ const Navbar = () => {
                 </ToggleButton>
             </ToggleButtonGroup>
         </div>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar

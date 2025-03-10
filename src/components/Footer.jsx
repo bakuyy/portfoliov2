@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <div className="footer-container noto-footer mt-8">
-      <div>made with ♡ by sophie @ 2024</div>
+      <div>made with ♡ by sophie @ 2025</div>
       <div className="icons">
         <a
           className="icon"
