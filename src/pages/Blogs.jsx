@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Blog from '../components/Blog';
+import { ThemeContext } from '../components/util/ThemeContext';
 
 const Blogs = () => {
+  const { theme } = useContext(ThemeContext);
+  const lightTheme = theme === 'light';
+
   const blogPosts = [
     {
       Title: 'Speedrunning this site',
@@ -23,10 +27,12 @@ const Blogs = () => {
   return (
     <div className='ledger'> 
       <div className='bl-title text-center my-16 noto-home text-2xl'>blogs</div>
+      <div className="text-center text-lg noto-normal">
+        In progress right now, check soon!
+      </div>
       {/* {blogPosts.map((post, index) => (
         <Blog key={index} Title={post.Title} Desc={post.Desc} Date={post.Date} />
       ))} */}
-      <div>In progress right now, check soon!</div>
     </div>
   )
 }

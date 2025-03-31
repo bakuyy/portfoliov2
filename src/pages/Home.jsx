@@ -1,16 +1,23 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useContext} from "react";
 import { useNavigate } from "react-router-dom";
 import "../styling/Home.css";
 import Highlighter from "react-highlight-words";
 
+//light
+import Fisherman from "../assets/dark/Fisherman.gif";
+import Waveman from "../assets/dark/Waveman.gif";
+import Goose from "../assets/dark/Goose.gif";
+import Underline from "../assets/dark/Underline.png";
+import Clock from "../assets/dark/Clock.gif";
 
-import Fisherman from "../assets/Fisherman.gif";
-import Waveman from "../assets/Waveman.gif";
-import Whitewaveman from "../assets/Whitewaveman.gif"
-import Goose from "../assets/Goose.gif";
-import Underline from "../assets/Underline.png";
-import Clock from "../assets/Clock.gif";
-import Eggman from "../assets/Eggman.gif";
+//dark
+import FishermanWhite from "../assets/light/FishermanWhite.gif";
+import WavemanWhite from "../assets/light/WavemanWhite.gif";
+import GooseWhite from "../assets/light/GooseWhite.gif";
+import ClockWhite from "../assets/light/ClockWhite.gif";
+
+import { ThemeContext } from '../components/util/ThemeContext'
+
 
 import { motion } from "framer-motion"; 
 
@@ -21,14 +28,13 @@ const Home = () => {
     navigate('/cove')
   }
 
-  const [theme, setTheme] = (useState('light'))
+  const { theme, setTheme } = useContext(ThemeContext); 
+  const [lightTheme, setLightTheme] = useState();
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
-    document.body.className = savedTheme === 'light' ? 'light-theme' : 'dark-theme';
-}, [])
-
+  useEffect(()=>{
+    setLightTheme(theme === 'light')
+  },[theme])
+  
 
   return (
   
@@ -42,7 +48,7 @@ const Home = () => {
       >
         <div className="waveman-container">
           <div>Hi,</div>
-          <img className="waveman" src={Waveman} alt="Waveman" />
+          <img className="waveman" src={lightTheme? Waveman:WavemanWhite} alt="Waveman" />
         </div>
         <div>I'm Sophie</div>
         <div> </div>
@@ -52,8 +58,7 @@ const Home = () => {
             {/* <img src={Eggman} alt="Eggman" className="eggman"/> */}
             ?
           </button>
-          <img className="fisherman" src={Fisherman} alt="Fisherman" />
-          <img className="fisherman" src={Fisherman} alt="fishman"/>
+          <img className="fisherman" src={lightTheme?Fisherman:FishermanWhite} alt="Fisherman" />
         </div>
       </motion.div>
       
@@ -63,7 +68,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }} 
       >
-        <img className="goose" src={Goose} alt="Goose" />
+        <img className="goose" src={lightTheme?Goose:GooseWhite} alt="Goose" />
         <Highlighter
           highlightClassName="highlight"
           searchWords={[
@@ -113,7 +118,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.8 }}
       >
-        <img className="clock" src={Clock} alt="Clock" />
+        <img className="clock" src={lightTheme? Clock:ClockWhite} alt="Clock" />
         <div className="noto-home home-item">over the past bit, I have</div>
       </motion.div>
 

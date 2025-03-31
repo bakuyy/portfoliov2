@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import '../styling/Navbar.css';
 import ToggleButton from '@mui/material/ToggleButton';
@@ -7,22 +7,11 @@ import { CiLight } from "react-icons/ci";
 import { MdModeNight } from "react-icons/md";
 import Resume from "../assets/resume.pdf"
 
+import { ThemeContext } from './util/ThemeContext';
+
 const Navbar = () => {
-    const [theme, setTheme] = useState('light');
 
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        setTheme(savedTheme);
-        document.body.className = savedTheme === 'light' ? 'light-theme' : 'dark-theme';
-    }, []);
-
-    const handleThemeChange = (event, newTheme) => {
-        if (newTheme !== null) {
-            setTheme(newTheme);
-            document.body.className = newTheme === 'light' ? 'light-theme' : 'dark-theme';
-            localStorage.setItem('theme', newTheme);
-        }
-    }
+    const { theme, setTheme } = useContext(ThemeContext);
 
     const links = [
         { name: "Home", link: '/', id: 'home' },
@@ -34,6 +23,13 @@ const Navbar = () => {
     const iconStyle = {
         color: theme === 'light' ? 'black' : '#D9D9D9', 
         fontSize: '1em', 
+    };
+
+
+    const handleThemeChange = (event, newTheme) => {
+        if (newTheme) {
+            setTheme(newTheme); 
+        }
     };
 
     return (

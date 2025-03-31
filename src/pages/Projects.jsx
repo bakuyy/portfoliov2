@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Typewriter from "typewriter-effect";
 import Project from "../components/Project";
 import "../styling/Projects.css";
 import { SiDevpost } from "react-icons/si";
 import { FaGithub, FaYoutube } from "react-icons/fa";
+import { ThemeContext } from '../components/util/ThemeContext';
 import Proj1 from "../styling/projIcons/proj1.png";
 import Proj2 from "../styling/projIcons/proj2.png";
 import Proj3 from "../styling/projIcons/proj3.png";
@@ -16,11 +17,19 @@ import Proj9 from "../styling/projIcons/proj9.png";
 import Proj10 from "../styling/projIcons/proj10.png";
 import Proj11 from "../styling/projIcons/proj11.png";
 import { motion } from "framer-motion"
-import Rainbow from "../assets/Rainbow.png"
-import Ideaman from "../assets/Ideaman.gif"
-import Plane from "../assets/Plane.gif"
+
+import Rainbow from "../assets/dark/Rainbow.png";
+import Ideaman from "../assets/dark/Ideaman.gif";
+import Plane from "../assets/dark/Plane.gif";
+
+import RainbowWhite from "../assets/light/RainbowWhite.gif";
+import IdeamanWhite from "../assets/light/IdeamanWhite.gif";
+import PlaneWhite from "../assets/light/PlaneWhite.gif";
 
 const Projects = () => {
+  const { theme } = useContext(ThemeContext);
+  const lightTheme = theme === 'light';
+
   const projects = [
     {
       Id: 1,
@@ -241,39 +250,25 @@ const Projects = () => {
   return (
     <div className="projects-container">
       <div className="typewriter-container">
-      <img src={Ideaman} alt="Ideaman" className="ideaman"/>
-      <div className="typewriter">
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("ideas")
-              .typeString("   ")
-              .pauseFor(1500)
-              .typeString("   ")
-              .typeString("··········")
-              .typeString("   ")
-              .pauseFor(1500)
-              .typeString("reality.")
-              .typeString("   ")
-              .pauseFor(1000)
-              .start();
-          }}
-          options={{
-            cursor: "",
-            delay: 50,
-          }}
-        />
+        <img src={lightTheme ? IdeamanWhite : Ideaman} alt="Ideaman" className="ideaman"/>
+        <div className="typewriter">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("my projects")
+                .pauseFor(1500)
+                .start();
+            }}
+            options={{
+              cursor: "",
+              delay: 50,
+            }}
+          />
+        </div>
+        <img src={lightTheme ? PlaneWhite : Plane} alt="Plane" className="plane"/>
       </div>
-      <img className="plane" src={Plane} alt="Plane"/>
-
-      </div>
-
-      <div>
-  <img className="rainbow" src={Rainbow} alt="Rainbow" />
-
-  <div className="proj-title noto-home">projects</div>
-</div>
-
+      <img src={lightTheme ? RainbowWhite : Rainbow} alt="Rainbow" className="rainbow"/>
+      <div className="proj-title">here are some things i've built</div>
       <div className="w-full flex flex-col items-center">
         {projects.reverse().map((project, index) => (
           <motion.div

@@ -1,3 +1,5 @@
+@import './theme.css';
+
 .home-container {
     display: flex;
     flex-direction: column;
@@ -30,6 +32,11 @@
     justify-content: center;
     box-sizing: border-box;
     position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.icon-box:hover {
+    border-color: var(--primary-color);
 }
 
 .eggman{
@@ -109,7 +116,22 @@
     text-align: left;
     color: var(--text-color);
     flex-direction: column;
-    overflow: hidden; 
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.text-box a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.text-box a:hover {
+    color: var(--link-hover-color);
+}
+
+.text-box:hover {
+    border-color: var(--primary-color);
 }
 
 .noto-home {
@@ -145,7 +167,7 @@
 }
 
 .highlight {
-    background-color: #DEB181;
+    background-color: var(--primary-color);
 }
 
 .home-item {

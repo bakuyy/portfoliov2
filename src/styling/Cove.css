@@ -1,3 +1,5 @@
+@import './theme.css';
+
 .cove-container {
     display: flex;
     flex-direction: column;
@@ -7,6 +9,8 @@
     margin: 0 auto;
     padding: 20px;
     position: relative;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .talkingman {
@@ -21,5 +25,9 @@
     /* border-radius: 8px; */
     text-align: center;
     border: 2px solid var(--text-color);
-    font-size: 2rem;
+    transition: border-color 0.3s ease;
+}
+
+.talking-text:hover {
+    border-color: var(--primary-color);
 }
